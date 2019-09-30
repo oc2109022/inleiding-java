@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class OpgaveCijfers extends Applet {
+public class Opgave1 extends Applet {
     int a, b, c;
     double uitkomst;
     int teller;
@@ -20,7 +20,7 @@ public class OpgaveCijfers extends Applet {
 
     public void paint(Graphics g) {
         setBackground(Color.lightGray);
-        g.drawString("We krijgen alle vier! : " + uitkomst, 40, 40);
-        teller++;
+        g.drawString("We krijgen alle vier! : "  + uitkomst, 40, 40);
+
     }
 }
