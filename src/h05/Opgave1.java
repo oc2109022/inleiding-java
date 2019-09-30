@@ -3,7 +3,7 @@ package h05;
 import java.awt.*;
 import java.applet.*;
 
-public class opdracht1 extends Applet {
+public class Opgave1 extends Applet {
 
     public void init() {
         setBackground(Color.white);
