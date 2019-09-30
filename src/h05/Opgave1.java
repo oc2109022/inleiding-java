@@ -32,8 +32,8 @@ public class Opgave1 extends Applet {
         g.drawOval(850, 260, 200, 200);
         g.drawString("Een Cirkel",920, 480);
         g.drawOval(850,30,300,200);
-        g.fillArc(915,40,225,220,20,90);
-        g.drawString("Dit is een taartpunt",925, 250);
+        g.fillArc(915,40,235,220,360,90);
+        g.drawString("Dit is een taartpunt",905, 250);
 
      }
 }
