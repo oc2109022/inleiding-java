@@ -5,7 +5,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class Opdracht2 extends Applet {
+public class Opgave2 extends Applet {
     int a, b, c;
     double Seconden;
     double Minuut;
