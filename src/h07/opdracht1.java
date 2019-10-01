@@ -1,6 +1,8 @@
+package h07;
+
 import java.awt.*;
-        import java.applet.*;
-        import java.awt.event.*;
+import java.applet.*;
+import java.awt.event.*;
 
 public class opdracht1 extends Applet {
     TextField tekstvak;
