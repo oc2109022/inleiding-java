@@ -19,11 +19,12 @@ public class Opgave2 extends Applet {
 
     public void paint(Graphics g) {
          g.drawString(schermtekst, 50, 60);
+         g.drawLine( 1, 70, 400, 70);
     }
 
     class KnopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            schermtekst = "Ja, dit doet ietss zebi";
+            schermtekst = "Ja, dit doet eindelijk wel iets";
 
         }
     }
