@@ -2,26 +2,47 @@ package h08;
 
 import java.awt.*;
 import java.applet.*;
-import java.awt.Button.*;
+import java.awt.event.*;
 
- public class Opgave1 extends Applet {
-     Label label;
-     TextField tekst;
-     Button button1;
-     Button button2;
+public class Opgave1 extends Applet {
+    TextField tekst;
+    Button button1;
+    Button button2;
+    double getal;
+    String s;
 
-     public void init() {
-         button1 =  new Button();
-         button1.setLabel("Ok");
-         Button1Listener bl = new Button1Listener();
-         button1.addActionListener( bl );
-         add(button1);
-         button2 = new Button();
-         button2.setLabel("Reset");
-         Button2Listener bl2 = new Button2Listener();
-         button2.addActionListener( bl );
-         add(button2);
-     }
- }
+    public void init() {
+        button1 = new Button();
+        button1.setLabel("Ok");
+        Button1Listener bl = new Button1Listener();
+        button1.addActionListener(bl);
+        add(button1);
+        button2 = new Button();
+        button2.setLabel("Reset");
+        Button2Listener bl2 = new Button2Listener();
+        button2.addActionListener(bl);
+        add(button2);
+
+    }
+
+    public void paint(Graphics g) {
+        g.drawString("" + getal, 20, 30);
+
+    }
+
+    class Button1Listener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            getal = Double.parseDouble( s );
+            String s = tekst.getText();
+        }
+    }
+
+    class Button2Listener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+
+        }
+    }
+}
+
 
 
