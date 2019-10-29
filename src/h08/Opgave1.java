@@ -12,6 +12,8 @@ public class Opgave1 extends Applet {
     String s;
 
     public void init() {
+        tekst = new TextField();
+        add(tekst);
         button1 = new Button();
         button1.setLabel("Ok");
         Button1Listener bl = new Button1Listener();
@@ -19,14 +21,15 @@ public class Opgave1 extends Applet {
         add(button1);
         button2 = new Button();
         button2.setLabel("Reset");
-        Button2Listener bl2 = new Button2Listener();
-        button2.addActionListener(bl);
+        Button2Listener b2 = new Button2Listener();
+        button2.addActionListener(b2);
         add(button2);
 
     }
 
     public void paint(Graphics g) {
-        g.drawString("" + getal, 20, 30);
+        g.drawString(s, 20, 30);
+        g.drawString(getal, 30,20);
 
     }
 
@@ -34,12 +37,14 @@ public class Opgave1 extends Applet {
         public void actionPerformed(ActionEvent e) {
             getal = Double.parseDouble( s );
             String s = tekst.getText();
+
+
         }
+
     }
 
     class Button2Listener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-
         }
     }
 }

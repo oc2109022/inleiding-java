@@ -5,7 +5,7 @@ import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
 
-        public class h10 extends Applet {
+        public class Opgave1 extends Applet {
             TextField tekst1;
             Label label1;
             String s, tekst;
