@@ -29,7 +29,6 @@ public class Opgave1 extends Applet {
 
     public void paint(Graphics g) {
         g.drawString(s, 20, 30);
-        g.drawString(getal, 30,20);
 
     }
 

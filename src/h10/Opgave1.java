@@ -21,14 +21,14 @@ import java.awt.event.*;
             }
 
             public void paint (Graphics g){
-                g.drawString(""   , 50, 60);
+                g.drawString(s, 50, 60);
             }
 
             class Tekst1Listener implements ActionListener {
                 public void actionPerformed(ActionEvent e) {
                     s = tekst1.getText();
                     cijfers = Integer.parseInt( s);
-
+                    repaint(cijfers);
                 }
             }
         }
