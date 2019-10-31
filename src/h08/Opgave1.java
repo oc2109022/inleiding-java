@@ -1,5 +1,6 @@
 package h08;
 
+
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
@@ -34,10 +35,9 @@ public class Opgave1 extends Applet {
 
     class Button1Listener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            getal = Double.parseDouble( s );
+            getal = Double.parseDouble(s);
             String s = tekst.getText();
-
-
+            repaint();
         }
 
     }
