@@ -19,9 +19,11 @@ public class Opgave3 extends Applet {
         add(tekst1);
     }
         public void paint (Graphics g) {
+
             g.drawString("Hier", 50, 70);
         }
-            class Tekst1Listener implements ActionListener {
+
+        class Tekst1Listener implements ActionListener {
                 public void actionPerformed(ActionEvent e) {
 
 
