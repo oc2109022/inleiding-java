@@ -21,9 +21,8 @@ public class Opgave2 extends Applet {
     }
 
     public void paint (Graphics g){
-
-        g.drawString(s, 50, 60);
-        g.drawString(s,  50, 120);
+        g.drawString(s,  50, 60);
+        g.drawString(s,  50, 80);
     }
 
     class Tekst1Listener implements ActionListener {

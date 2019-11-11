@@ -25,6 +25,7 @@ public class Opgave3 extends Applet {
 
         class Tekst1Listener implements ActionListener {
                 public void actionPerformed(ActionEvent e) {
+               if ( s > 10 ) {
 
 
 
