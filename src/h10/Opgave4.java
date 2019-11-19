@@ -10,7 +10,7 @@ public class Opgave3 extends Applet {
     String a, tekst;
 
 
-        public void init() {
+    public void init() {
         tekst1 = new TextField("", 20);
         label1 = new Label("Typ hier uw Getal");
         tekst1.addActionListener(new Tekst1Listener());
@@ -18,48 +18,18 @@ public class Opgave3 extends Applet {
         add(label1);
         add(tekst1);
     }
-        public void paint (Graphics g) {
+    public void paint (Graphics g) {
+        g.drawString("Hier", 50, 70);
 
-            g.drawString("Hier", 50, 70);
-        }
-
-        class Tekst1Listener implements ActionListener {
-                public void actionPerformed(ActionEvent e){
-                repaint(tekst1);
-
-
-                }
-
-
-        }
     }
 
+        class Tekst1Listener implements ActionListener {
+            public void actionPerformed(ActionEvent e){
+                repaint();
 
 
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }
