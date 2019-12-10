@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
 
-public class Opgave3 extends Applet {
+public class Opgave4 extends Applet {
     TextField tekst1;
     Label label1;
     String a, tekst;
@@ -26,6 +26,7 @@ public class Opgave3 extends Applet {
         class Tekst1Listener implements ActionListener {
             public void actionPerformed(ActionEvent e){
                 repaint();
+
 
 
         }

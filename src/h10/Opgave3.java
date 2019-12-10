@@ -10,6 +10,7 @@ public class Opgave3 extends Applet {
     String a, tekst;
 
 
+
         public void init() {
         tekst1 = new TextField("", 20);
         label1 = new Label("Typ hier uw Getal");
@@ -25,7 +26,7 @@ public class Opgave3 extends Applet {
 
         class Tekst1Listener implements ActionListener {
                 public void actionPerformed(ActionEvent e){
-                repaint(tekst1);
+                repaint();
 
 
                 }
@@ -62,4 +63,4 @@ public class Opgave3 extends Applet {
 
 
 
-}
+
