@@ -7,6 +7,8 @@ import java.awt.event.*;
 public class Opgave4 extends Applet {
     TextField tekst1;
     Label label1;
+    Label label2;
+    Label label3;
     String a, tekst;
 
 
@@ -21,7 +23,8 @@ public class Opgave4 extends Applet {
         add(tekst1);
     }
     public void paint (Graphics g) {
-        g.drawString("Hier", 50, 70);
+        g.drawString("Hier Typen", 50, 70);
+        g.drawString("Hier Ook Typen", 100, 70);
 
     }
 
